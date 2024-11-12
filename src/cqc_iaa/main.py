@@ -260,7 +260,6 @@ def main():
             text = "\n".join(messages)
             summary = summarizer.summarize(text)
             user_summaries[user_id] = summary
-            # break # TODO: delete this stopping for one here
 
     pdf_generator = PDFGenerator(main_color_hex=env_vars['MAIN_COLOR_HEX'],
                                  secondary_color_hex=env_vars['SECONDARY_COLOR_HEX'])
